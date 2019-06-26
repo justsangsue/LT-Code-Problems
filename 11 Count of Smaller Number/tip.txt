@@ -1,0 +1,1 @@
+SolutionOne: sort and binary search, time complexity (N + k) * log(n). N: array.length; k: queries.length.

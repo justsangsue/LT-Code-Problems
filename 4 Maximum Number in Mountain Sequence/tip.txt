@@ -1,0 +1,1 @@
+The sequence must have no duplicate numbers.

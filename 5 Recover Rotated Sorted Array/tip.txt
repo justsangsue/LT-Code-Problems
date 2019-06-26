@@ -1,0 +1,3 @@
+Learned a limitation of binary search.
+Cannot use binary search! [1,1,1,1,-1,1,1,1,1]
+3 step rotation, time complexity O(n).

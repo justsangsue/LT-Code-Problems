@@ -1,0 +1,1 @@
+1. Revert a string in python: s[::-1]

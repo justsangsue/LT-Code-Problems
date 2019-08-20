@@ -1,0 +1,2 @@
+1. In a trie, every node has a dictionary: {str, NextNode}. This is used as "next" like a normal tree. So if we want to move to next node, just use current = current.children[char].
+2. TrieNode.children is a defaultdict, which means if no key is found then give a default value. In this case, the default value is an empty TrieNode()

@@ -1,0 +1,2 @@
+1. For min heap, the result is the first element in final heap
+2. For max heap (could construct by multiply -1 to nums), the result is the last element in heap. Good when n is extremely large, close to Inf.

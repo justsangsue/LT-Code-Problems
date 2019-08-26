@@ -34,5 +34,41 @@ class Solution:
         hashmap[h].append(root.val)
         return h
 
+
+#
+#
+# More elegant version
+#
+#
+
+"""
+Definition of TreeNode:
+class TreeNode:
+    def __init__(self, val):
+        self.val = val
+        self.left, self.right = None, None
+"""
+
+
+class Solution:
+    """
+    @param: root: the root of binary tree
+    @return: collect and remove all leaves
+    """
+    def findLeaves(self, root):
+        # write your code here
+        if root == None:
+            return []
+        hashmap = collections.defaultdict(list)
+        self.helper(root, hashmap)
+        return [hashmap.get(key) for key in hashmap]
+    
+    def helper(self, root, hashmap): # start from 0, not 1
+        if root == None:
+            return 0
+        h = max(self.helper(root.right, hashmap), self.helper(root.left, hashmap)) + 1
+        hashmap[h].append(root.val)
+        return h
+
         
         

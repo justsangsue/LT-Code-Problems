@@ -1,0 +1,1 @@
+1. Corner case: pay attention on possible NoneType.

@@ -1,0 +1,1 @@
+1. In this question, the root must have a left child or nothing at all (root only).
